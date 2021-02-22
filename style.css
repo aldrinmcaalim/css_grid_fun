@@ -10,21 +10,54 @@
 .container {
     height: 100vh;
     display: grid;
-    border: 3px solid red;
     grid-template: 
     "nav nav nav" 1fr
-    "header header header" 2fr
-    "main main main" 3fr
-    "footer footer footer" 1fr
+    "header header header" 5fr
+    "main main main" 10fr
+    "footer footer footer" 30px 
     / 1fr 1fr 1fr;
 }
 
 nav {
     grid-area: nav;
+    background-color: black;
+}
+
+.container nav {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    grid-gap: 1.7rem;
+    align-items: center;
+}
+
+nav a:link, nav a:visited {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    color: rgb(197, 13, 13);
 }
 
 header {
     grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.3rem;
 }
 
 main {
@@ -33,4 +66,10 @@ main {
 
 footer {
     grid-area: footer;
+}
+
+nav.footer {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
 }
