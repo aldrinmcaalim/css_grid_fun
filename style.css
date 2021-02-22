@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    border: 3px solid red;
+    grid-template: 
+    "nav nav nav" 1fr
+    "header header header" 2fr
+    "main main main" 3fr
+    "footer footer footer" 1fr
+    / 1fr 1fr 1fr;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
