@@ -107,11 +107,16 @@ main section.sidebar-2 h3 {
     margin: 20px 0;
 }
 
-main section.sidebar-2 a {
+main section.sidebar-2 a:link, main section.sidebar-2 a:visited {
     margin: 5px;
     text-decoration: none;
     color: white;
 }
+
+main section.sidebar-2 a:hover, main section.sidebar-2 a:active {
+    color: rgb(197, 13, 13);
+}
+
 
 main section.item-3 {
     grid-area: paragraph-3;
