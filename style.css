@@ -63,9 +63,12 @@ header p {
 main {
     grid-area: main;
     display: grid;
+    margin-top: 30px;
     grid-template: 
     "paragraph-1 paragraph-1 side-1" 1fr 
     "paragraph-2 paragraph-2 side-2" 1fr
+    "paragraph-3 paragraph-3 paragraph-3" 1fr
+    / 1fr 1fr 1fr;
 }
 
 main section.item-1 {
@@ -82,6 +85,10 @@ main section.item-2 {
 
 main section.sidebar-2 {
     grid-area: side-2;
+}
+
+main section.item-3 {
+    grid-area: paragraph-3;
 }
 
 footer {
